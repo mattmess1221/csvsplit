@@ -1,0 +1,22 @@
+[project]
+name = "csvsplit"
+version = "1.0.0"
+description = "Split large CSV files into smaller chunks"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Matthew Messinger", email = "mattmess1221@gmail.com" }]
+dependencies = []
+
+[project.scripts]
+csvsplit = "csvsplit:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.2.0",
+  "syrupy>=7.0.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
